@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Prediction Result</h1>
+
+    {% if prediction == 1 %}
+        <h2 style="color:green;">✅ REAL NEWS</h2>
+    {% else %}
+        <h2 style="color:red;">❌ FAKE NEWS</h2>
+    {% endif %}
+
+    <a href="/">Check another article</a>
+</div>
+
+</body>
+</html>
